@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PhilomathyApp</string>
+    <string name="not_have_account_signup">Not have account? <b>SignUp</b></string>
+    <string name="already_have_account_login">Already have account? <b>LogIn</b></string>
+</resources>

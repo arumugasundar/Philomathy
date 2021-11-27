@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/titleLabelTv"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="SignUp" />
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleLabelTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Create a New Account" />
+
+    <!--Email-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTil"
+        android:layout_above="@+id/passwordTil"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Password-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Login Button-->
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordTil"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up" />
+
+    <!--Not have account? Signup-->
+    <TextView
+        android:id="@+id/AlreadyHavingAccountTv"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="@string/already_have_account_login" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/titleLabelTv"-->
+<!--        style="@style/TextAppearance.MaterialComponents.Headline4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="153dp"-->
+<!--        android:layout_marginTop="13dp"-->
+<!--        android:layout_marginEnd="149dp"-->
+<!--        android:text="SignUp"-->
+<!--        android:textAlignment="center" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/NewAccText"-->
+<!--        style="@style/TextAppearance.MaterialComponents.Caption"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/titleLabelTv"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="140dp"-->
+<!--        android:layout_marginTop="62dp"-->
+<!--        android:layout_marginEnd="141dp"-->
+<!--        android:layout_marginBottom="-1dp"-->
+<!--        android:text="Create a New Account"-->
+<!--        android:textAlignment="center" />-->
+
+<!--&lt;!&ndash;    <com.google.android.material.textfield.TextInputLayout&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/emailTil"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="37dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_below="@+id/NewAccText"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_alignParentStart="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_alignParentEnd="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginStart="51dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginTop="64dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginEnd="51dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </com.google.android.material.textfield.TextInputLayout>&ndash;&gt;-->
+
+<!--    &lt;!&ndash;Email&ndash;&gt;-->
+
+<!--    &lt;!&ndash;Password&ndash;&gt;-->
+
+<!--    &lt;!&ndash;    <com.google.android.material.textfield.TextInputLayout&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/passwordTil"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="33dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_below="@+id/emailTil"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_alignParentStart="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_alignParentEnd="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginStart="51dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginEnd="51dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        &ndash;&gt;-->
+
+<!--&lt;!&ndash;    </com.google.android.material.textfield.TextInputLayout>&ndash;&gt;-->
+
+<!--    &lt;!&ndash;SignUp Button&ndash;&gt;-->
+
+<!--    &lt;!&ndash;Already have account? LogIn&ndash;&gt;-->
+
+<!--    <com.google.android.material.textfield.TextInputEditText-->
+<!--        android:id="@+id/emailEt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/NewAccText"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="55dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginEnd="47dp"-->
+<!--        android:hint="Email"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        android:minHeight="48dp" />-->
+
+<!--    <com.google.android.material.textfield.TextInputEditText-->
+<!--        android:id="@+id/passwordEt"-->
+<!--        android:layout_width="311dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/emailEt"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="57dp"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:layout_marginEnd="43dp"-->
+<!--        android:hint="Password"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:minHeight="48dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/signUpBtn"-->
+<!--        android:layout_width="155dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/passwordEt"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="133dp"-->
+<!--        android:layout_marginTop="68dp"-->
+<!--        android:layout_marginEnd="123dp"-->
+<!--        android:text="Sign Up" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/AlreadyHavingAccountTv"-->
+<!--        style="@style/TextAppearance.MaterialComponents.Caption"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_below="@+id/signUpBtn"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="109dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginEnd="110dp"-->
+<!--        android:layout_marginBottom="266dp"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="@string/already_have_account_login"-->
+<!--        android:textAlignment="center" />-->
+
+
+</RelativeLayout>

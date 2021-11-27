@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "8662827299",
+    "project_id": "philomathy-app",
+    "storage_bucket": "philomathy-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8662827299:android:5032023faff35da6040c96",
+        "android_client_info": {
+          "package_name": "com.example.philomathyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8662827299-f8hcq472ds6cb9harbmdgf5s0ljbvdng.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.philomathyapp",
+            "certificate_hash": "84edcd6b8f35616334b020ee7b235dd07dac101f"
+          }
+        },
+        {
+          "client_id": "8662827299-6s6j12mk4quiitn1n31aupbtpierbman.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhmW31Ov0RMh1A6MuqD1r3mgKgRdyP0o0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8662827299-6s6j12mk4quiitn1n31aupbtpierbman.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
