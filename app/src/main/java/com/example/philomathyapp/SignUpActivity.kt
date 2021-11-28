@@ -9,22 +9,18 @@ import android.text.TextUtils
 import android.util.Log
 import android.util.Patterns
 import android.widget.Toast
-import androidx.appcompat.app.ActionBar
-import androidx.appcompat.app.AlertDialog
-import com.example.philomathyapp.databinding.ActivityLoginBinding
+//import androidx.appcompat.app.ActionBar
 import com.example.philomathyapp.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import java.lang.Exception
 
 class SignUpActivity : AppCompatActivity() {
     //ViewBinding
     private lateinit var binding: ActivitySignUpBinding
     //ActionBar
-    private lateinit var actionBar: ActionBar
+//    private lateinit var actionBar: ActionBar
 
     //ProgressDialog
     private lateinit var progressDialog: ProgressDialog
@@ -45,10 +41,10 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //Configure Actionbar, // enable back button
-        actionBar = supportActionBar!!
-        actionBar.title = "Sign Up"
-        actionBar.setDisplayHomeAsUpEnabled(true)
-        actionBar.setDisplayShowHomeEnabled(true)
+//        actionBar = supportActionBar!!
+//        actionBar.title = "Sign Up"
+//        actionBar.setDisplayHomeAsUpEnabled(true)
+//        actionBar.setDisplayShowHomeEnabled(true)
 
         //configure progress dialog
         progressDialog = ProgressDialog(this)
@@ -85,8 +81,8 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     private fun firebaseSignUp() {
-//        progressDialog.show()
-//
+        progressDialog.show()
+
         //create Account
         firebaseAuth.createUserWithEmailAndPassword(email,password)
             .addOnSuccessListener {
@@ -103,7 +99,7 @@ class SignUpActivity : AppCompatActivity() {
                     .add(user)
                     .addOnSuccessListener { documentReference ->
                         Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
-                        startActivity(Intent(this@SignUpActivity ,ProfileActivity::class.java))
+                        startActivity(Intent(this@SignUpActivity ,AppActivity::class.java))
                     }
                     .addOnFailureListener { e ->
                         Log.w(TAG, "Error adding document", e)

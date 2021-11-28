@@ -10,7 +10,7 @@ import com.example.philomathyapp.databinding.ActivityLoginBinding
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.app.ActionBar
+//import androidx.appcompat.app.ActionBar
 import com.example.philomathyapp.databinding.ActivityProfileBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -18,7 +18,7 @@ class ProfileActivity : AppCompatActivity() {
     //ViewBinding
     private lateinit var binding: ActivityProfileBinding
     //ActionBar
-    private lateinit var actionBar: ActionBar
+//    private lateinit var actionBar: ActionBar
     //FirebaseAuth
     private lateinit var firebaseAuth: FirebaseAuth
 
@@ -56,8 +56,8 @@ class ProfileActivity : AppCompatActivity() {
         }
 
         //configure ActionBar
-        actionBar = supportActionBar!!
-        actionBar.title = "Profile"
+//        actionBar = supportActionBar!!
+//        actionBar.title = "Profile"
 
         //init firebase auth
         firebaseAuth = FirebaseAuth.getInstance()

@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MCA/androidProjects/PhilomathyApp/app/src/main/res/layout/activity_app.xml" value="0.1" />
         <entry key="..\:/MCA/androidProjects/PhilomathyApp/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/MCA/androidProjects/PhilomathyApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/MCA/androidProjects/PhilomathyApp/app/src/main/res/layout/activity_profile.xml" value="0.1" />
         <entry key="..\:/MCA/androidProjects/PhilomathyApp/app/src/main/res/layout/activity_sign_up.xml" value="0.2713365539452496" />
+        <entry key="..\:/MCA/androidProjects/PhilomathyApp/app/src/main/res/layout/fragment_favourites.xml" value="0.16145833333333334" />
+        <entry key="..\:/MCA/androidProjects/PhilomathyApp/app/src/main/res/layout/fragment_home.xml" value="0.16145833333333334" />
+        <entry key="..\:/MCA/androidProjects/PhilomathyApp/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/MCA/androidProjects/PhilomathyApp/app/src/main/res/menu/menu.xml" value="0.1" />
       </map>
     </option>
   </component>

@@ -9,7 +9,7 @@ import android.text.TextUtils
 import android.util.Patterns
 import android.util.Patterns.EMAIL_ADDRESS
 import android.widget.Toast
-import androidx.appcompat.app.ActionBar
+//import androidx.appcompat.app.ActionBar
 import com.example.philomathyapp.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 import java.util.regex.Pattern
@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
     // ViewBinding
     private lateinit var binding:ActivityLoginBinding
     // ActionBar
-    private lateinit var actionBar: ActionBar
+//    private lateinit var actionBar: ActionBar
     // ProgressDialog
     private lateinit var progressDialog: ProgressDialog
     // FirebaseAuth
@@ -37,8 +37,8 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //configure actionbar
-        actionBar = supportActionBar!!
-        actionBar.title = "Login"
+//        actionBar = supportActionBar!!
+//        actionBar.title = "Login"
 
         //configure progress dialog
         progressDialog = ProgressDialog(this)
@@ -82,7 +82,7 @@ class LoginActivity : AppCompatActivity() {
                 val email = firebaseUser!!.email
                 Toast.makeText(this,"LoggedIn as $email", Toast.LENGTH_SHORT).show()
 
-                val intent = Intent(this@LoginActivity,ProfileActivity::class.java)
+                val intent = Intent(this@LoginActivity,AppActivity::class.java)
                 startActivity(intent)
                 finish()
             }
@@ -95,7 +95,7 @@ class LoginActivity : AppCompatActivity() {
     private fun checkUser(){
         var firebaseUser = firebaseAuth.currentUser
         if(firebaseUser != null){
-            startActivity(Intent(this,ProfileActivity::class.java))
+            startActivity(Intent(this,AppActivity::class.java))
             finish()
         }
     }
